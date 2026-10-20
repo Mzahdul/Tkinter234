@@ -57,7 +57,7 @@ def hasil_prediksi():
         "Kedokteran / Kesehatan": (nilai["Biologi"] + nilai["Kimia"] + nilai["Fisika"]) / 3,
         "Ekonomi / Manajemen": (nilai["Ekonomi"] + nilai["Matematika"] + nilai["Bahasa Indonesia"]) / 3,
         "Ilmu Sosial / Sejarah": (nilai["Sejarah"] + nilai["Geografi"] + nilai["Bahasa Indonesia"]) / 3,
-    }
+    } 
 
     prodi_terbaik = max(skor, key=skor.get)
     hasil.config(text=prodi_terbaik)
